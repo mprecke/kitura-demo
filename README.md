@@ -5,17 +5,14 @@ The Kitura Project was created with the Command Line on Mac OS X with Terminal.
 
 # Prerequisites are:
 
-- Install Xcode
-- Setup Command Line Tools for Xcode, run in Terminal:  
+- Install Xcode and setup Command Line Tools for Xcode, run in Terminal:  
 
     $ xcode-select --install
  
- - Install Homebrew, run in Terminal:
+ - Install Homebrew and Homebrew Tap, run in Terminal:
  
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-- Install Homebrew Tap, run in Terminal:
-
+    
     $ brew tap ibm-swift/kitura
 
 - Install Kitura's command line interface, run in Terminal:
