@@ -1,7 +1,7 @@
-# kitura-demo
+# kitura-demo - Server Side Swift 
 Sample Kitura Project with PostgreSQL and Sample iOS Client Project.
 
-The Kitura Project was created with the Command Line on Mac OS X with Terminal. 
+The Kitura Project (see http://www.kitura.io for more information) was created with the Command Line on Mac OS X with Terminal. The iOS Client Demo was taken from https://github.com/IBM-Swift/Kitura-HelloWorld-iOS and https://github.com/IBM-Swift/iOSSampleKituraKit. 
 
 # Prerequisites are:
 
