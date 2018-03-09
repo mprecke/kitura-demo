@@ -43,7 +43,7 @@ public class App {
         //GET request on all Students
         router.get("/students", handler: loadAllStudentsHandler)
         
-        // POST request on noiseLevels, posting a noiseLevel
+        // POST request to store a student
         router.post("/students", handler: storeStudentHandler)
     }
     

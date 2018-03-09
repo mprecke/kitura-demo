@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         }
         client.post("/students", data: newStudent) { (newStudent: Student?, error: Error?) in
             guard error == nil else {
-                //print("Error saving Noise to Kitura: \(error!)")
+                //print("Error saving student to Kitura: \(error!)")
                 return
             }
             print("Saving Student to Kitura succeeded")
