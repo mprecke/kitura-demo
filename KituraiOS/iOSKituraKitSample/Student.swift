@@ -1,0 +1,30 @@
+//
+//  Student.swift
+//  kitura-demo
+//
+//  Created by Moritz Philip Recke on 08/03/2018.
+//
+import Foundation
+
+struct Student: Codable {
+    
+    //MARK: Properties
+    var uniqueID: String
+    var firstName: String
+    var lastName: String
+    var cohort: String
+    var profile: String
+    
+    //MARK: Initialization
+    init?(uniqueID: String, firstName: String, lastName: String, cohort: String, profile: String) {
+        
+        // Initialize stored properties.
+        self.uniqueID = uniqueID
+        self.firstName = firstName
+        self.lastName = lastName
+        self.cohort = cohort
+        self.profile = profile
+        
+    }
+}
+
