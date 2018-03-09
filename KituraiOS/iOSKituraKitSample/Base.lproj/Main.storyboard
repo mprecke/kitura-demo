@@ -201,7 +201,13 @@
                             <outlet property="delegate" destination="k6b-NA-DIK" id="0DU-2t-Guv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Students" id="SgR-2c-haw"/>
+                    <navigationItem key="navigationItem" title="Students" id="ipE-cm-twG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ei7-H9-v4k">
+                            <connections>
+                                <action selector="reloadDataButtonTapped:" destination="k6b-NA-DIK" id="zID-kD-ST8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbG-Ds-5h6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

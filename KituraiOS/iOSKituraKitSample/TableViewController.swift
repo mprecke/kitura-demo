@@ -13,9 +13,13 @@ class TableViewController: UITableViewController {
     
     var studentsLoaded: [Student] = []
     
+    
+    @IBAction func reloadDataButtonTapped(_ sender: Any) {
+        loadStudentsFromServer()
+    }
+    
     private func loadStudentsFromServer() {
         studentsLoaded.removeAll()
-        
         guard let client = KituraKit(baseURL: "https://kiturademo.herokuapp.com") else {
             print("Error creating KituraKit client")
             return
@@ -29,18 +33,18 @@ class TableViewController: UITableViewController {
                 self.studentsLoaded = [Student]()
                 return
             }
-            self.studentsLoaded = students
+            self.studentsLoaded = students.sorted(by: { $0.lastName < $1.lastName })
             DispatchQueue.main.async { [unowned self] in
                 print(self.studentsLoaded)
                 self.tableView!.reloadData()
             }
-            
         }
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView!.reloadData()
         loadStudentsFromServer()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
