@@ -3,6 +3,8 @@ Sample Kitura Project with PostgreSQL and Sample iOS Client Project.
 
 The Kitura Project (see http://www.kitura.io for more information) was created with the Command Line on Mac OS X with Terminal. The iOS Client Demo was taken from https://github.com/IBM-Swift/Kitura-HelloWorld-iOS and https://github.com/IBM-Swift/iOSSampleKituraKit. 
 
+The implemented Project in this case is ment for hosting on Heroku with a PostgreSQL database but can be hosted anywhere and connected to any other PostgreSQL database with just minimal edits required. 
+
 # Prerequisites are:
 
 - Install Xcode and setup Command Line Tools for Xcode, run in Terminal:  
