@@ -109,13 +109,13 @@ The Xcode Project is configured to be ready to use. If a new Project is created,
     
  - Install Kitura Pod, in Terminal:
         
-	$ pod install
+        $ pod install
 
 - Open .xcworkspace not XCode Project file to work with Kitura Pod in the Xcode Project
 
 - In Sourcefiles that use Kitura, add:
         
-	import KituraKit
+        import KituraKit
 
 - To access Kitura Server, use syntax as follows:
 
