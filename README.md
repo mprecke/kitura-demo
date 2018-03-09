@@ -141,15 +141,15 @@ The Xcode Project is configured to be ready to use. If a new Project is created,
         	}
         	client.get("/students") { (students: [Student]?, error: Error?) in
         		guard error == nil else {
-        		print("Error getting student data from Kitura: \(error!)")
-        		return
+        			print("Error getting student data from Kitura: \(error!)")
+        			return
 			}
 			guard let students = students else {
 				self.studentsLoaded = [Student]()
 				return
 			}
 			self.studentsLoaded = students.sorted(by: { $0.lastName < $1.lastName })
-				DispatchQueue.main.async { [unowned self] in
+			DispatchQueue.main.async { [unowned self] in
 				print(self.studentsLoaded)
 				self.tableView!.reloadData()
 			}
